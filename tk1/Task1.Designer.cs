@@ -2,7 +2,7 @@
 {
     partial class Menu
     {
-       
+
         /// <summary>
         /// Required designer variable.
         /// </summary>
@@ -445,8 +445,8 @@
     /// Требуемый метод для поддержки конструктора — не изменяйте 
     /// содержимое этого метода с помощью редактора кода.
     /// </summary>
-  
-        #endregion
-    }
+
+    #endregion
+}
 
 

@@ -12,7 +12,7 @@ namespace IS_2_20_BelkolLK_U
 {
     public partial class Menu : Form
     {
-         
+
         abstract class Components<type>
         {
             protected int Cost;
@@ -31,12 +31,12 @@ namespace IS_2_20_BelkolLK_U
         }
         class HardDrive<type> : Components<type>
         {
-            public int Oboroti { get; private set;} 
-          
+            public int Oboroti { get; private set; }
+
             public string Interface { get; private set; }
-            
+
             public int size { get; private set; }
-            
+
             public HardDrive(int Cost, int Year, type Art, int oboroti, string _interface, int Size) : base(Cost, Year, Art)
             {
                 Oboroti = oboroti;
@@ -50,12 +50,12 @@ namespace IS_2_20_BelkolLK_U
         }
         class Videocarta<type> : Components<type>
         {
-           
+
             public double chastota { get; private set; }
-                 
-            public string Manuf { get; private set; }                    
-            public int Size { get; private set; }          
-            public Videocarta(int Cost, int Year, type Art, double chastotaGPU, string manufacture, int size):base(Cost, Year, Art)
+
+            public string Manuf { get; private set; }
+            public int Size { get; private set; }
+            public Videocarta(int Cost, int Year, type Art, double chastotaGPU, string manufacture, int size) : base(Cost, Year, Art)
             {
                 chastota = chastotaGPU;
                 Manuf = manufacture;
@@ -121,4 +121,3 @@ namespace IS_2_20_BelkolLK_U
 
 
 }
-
