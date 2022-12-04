@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MySql.Data.MySqlClient;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -7,36 +8,44 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using Microsoft.Data.SqlClient;
 
-namespace IS_2_20_BelkolLK_U
+
+
+namespace Task2
 {
-    public partial class Form2 : Form
+
+    public partial class Task2 : Form
     {
-
-        public class BDconnect
+        public Task2()
         {
-            protected string connect;
+            InitializeComponent();
+        }
 
-            public BDconnect(string Connect)
+        public class DBconnect
+        {
+            protected string Connect;
+
+
+            public DBconnect(string connectString)
             {
-                this.connect = Connect;
+                this.Connect = connectString;
+
             }
 
-            public string GetConnectionString()
+            public string Connection()
             {
-                return this.connect;
+                return this.Connect;
             }
         }
 
-        BDconnect BD = new BDconnect("server=chuc.caseum.ru;port=33333;user=uchebka;" +
+        DBconnect BD = new DBconnect("server=chuc.caseum.ru;port=33333;user=uchebka;" +
                 "database=uchebka;password=uchebka;");
 
-        SqlConnection con;
+        MySqlConnection con;
 
-        private void Form2_Load(object sender, EventArgs e)
+        private void Task2_Load(object sender, EventArgs e)
         {
-            con = new SqlConnection(BD.GetConnectionString());
+            con = new MySqlConnection(BD.Connection());
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -51,9 +60,11 @@ namespace IS_2_20_BelkolLK_U
                 MessageBox.Show("Соединение не работает");
             }
             finally
-            {              
+            {            
                 con.Close();
             }
         }
 
-}    }
+
+    }
+}

@@ -1,6 +1,6 @@
-﻿namespace IS_2_20_BelkolLK_U
+﻿namespace Task2
 {
-    partial class Form2
+    partial class Task2
     {/// <summary>
      /// Обязательная переменная конструктора.
      /// </summary>
@@ -21,7 +21,7 @@
 
         #region Код, автоматически созданный конструктором форм Windows
 
-        
+
         private void InitializeComponent()
         {
             this.button1 = new System.Windows.Forms.Button();
@@ -29,7 +29,7 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(24, 29);
+            this.button1.Location = new System.Drawing.Point(46, 50);
             this.button1.Margin = new System.Windows.Forms.Padding(4);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(177, 28);
@@ -38,16 +38,16 @@
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // Form2
+            // Task2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(229, 82);
+            this.ClientSize = new System.Drawing.Size(284, 137);
             this.Controls.Add(this.button1);
             this.Margin = new System.Windows.Forms.Padding(4);
-            this.Name = "Form2";
-            this.Text = "Form2";
-            this.Load += new System.EventHandler(this.Form2_Load);
+            this.Name = "Task2";
+            this.Text = "Task2";
+            this.Load += new System.EventHandler(this.Task2_Load);
             this.ResumeLayout(false);
 
         }
