@@ -3,7 +3,7 @@ using System;
 using System.Data;
 using System.Drawing;
 using System.Windows.Forms;
-using connectBD;
+using ConnectBD;
 using System.Collections.Generic;
 using System.Net;
 namespace tk4
