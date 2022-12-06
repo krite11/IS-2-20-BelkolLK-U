@@ -76,7 +76,7 @@ namespace tk4
 
         void LoadImage(string a)
         {
-            var rec = WebRequest.Create(a);
+            var rec = Request.Create(a);
             using (var res = rec.GetResponse())
             using (var stream = res.GetResponseStream())
                 pictureBox1.Image = Bitmap.FromStream(stream);
