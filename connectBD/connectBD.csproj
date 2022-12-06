@@ -1,0 +1,20 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="MySql.Data" Version="8.0.31" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\tk1\Task1.csproj" />
+    <ProjectReference Include="..\tk2\Task2.csproj" />
+    <ProjectReference Include="..\tk3\Task3.csproj" />
+    <ProjectReference Include="..\tk4\Task4.csproj" />
+  </ItemGroup>
+
+</Project>
